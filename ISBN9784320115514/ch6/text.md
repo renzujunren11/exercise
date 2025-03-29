@@ -72,3 +72,22 @@ M_{\sqrt{n}\bar{Z}}(t) &= \left(1 + \frac{t^2}{2n} + o(\frac{1}{n})\right)^n\\
 &= \left(1 + \frac{\frac{t^2}{2} + o(1)}{n})\right)^n\\
 &\rightarrow e^{t^2/2}
 \end{align*}$$
+
+## 経験分布関数の真の累積分布関数に対する不偏性の証明
+確率変数 $X_1, \dots, X_n$ が独立に同一の分布 $F(x)$ からの標本とする  
+経験分布関数は次のように定義される
+$$
+\hat{F}_n(x) = \frac{1}{n}\sum_{i=1}^n I(X_i \le x)
+$$
+ここで、$I(X_i \le x)$は指示関数  
+各指示関数の期待値は、
+$$
+E[I(X_i \le x)] = P(X_i \le x) = F(x)
+$$
+$\hat{F}_n(x)$ の期待値は、
+$$\begin{align*}
+E[\hat{F}_n(x)] &= E\left[\frac{1}{n}\sum_{i=1}^n I(X_i \le x)\right]\\
+&= \frac{1}{n}\sum_{i=1}^n E[I(X_i \le x)]\\
+&= \frac{1}{n}\sum_{i=1}^n F(x)\\
+&= F(x).
+\end{align*}$$
