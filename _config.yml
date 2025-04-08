@@ -3,3 +3,5 @@ markdown: kramdown
 kramdown:
   math_engine: mathjax
   input: GFM
+  math_engine_opts:
+    preview: true
