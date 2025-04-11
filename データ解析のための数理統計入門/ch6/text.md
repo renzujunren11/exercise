@@ -5,7 +5,7 @@
 標本平均 $\bar{X_n} = \frac{1}{n}\sum_{i=1}^n X_i$ は $n \rightarrow \infty$で
 
 $$
-P(|\bar{X_n} - \mu| \lt c) \rightarrow 0
+P(|\bar{X}_n - \mu| \gt c) \rightarrow 0
 $$
 
 「標本平均が母平均に収束する」
