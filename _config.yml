@@ -1,7 +1,19 @@
 # _config.yml
+title: 統計学学習サイト
+description: 統計学の学習教材を提供するサイト
+baseurl: "/exercise"
+url: "https://renzujunren11.github.io"
+
 markdown: kramdown
 kramdown:
   math_engine: mathjax
   input: GFM
   math_engine_opts:
     preview: true
+
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
